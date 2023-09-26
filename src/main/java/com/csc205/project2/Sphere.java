@@ -1,6 +1,6 @@
 package com.csc205.project2;
 
-public class Sphere {
+public class Sphere extends Shape implements ThreeDimensionalShape{
 
     private double radius;
 
@@ -22,12 +22,25 @@ public class Sphere {
         this.radius = radius;
     }
 
+    // Given CODE BEFORE AI GENERATION
+/*
     public double surfaceArea() {
         return 4.0 * Math.PI * Math.pow(radius, 2);
     }
 
     public double volume() {
         return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+    }
+*/
+
+    // AI CODE
+    public double volume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    }
+
+    // AI CODE
+    public double surfaceArea() {
+        return 4 * Math.PI * Math.pow(radius, 2);
     }
 
     @Override
